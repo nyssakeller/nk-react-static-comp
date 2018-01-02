@@ -1,0 +1,89 @@
+.Banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 80px auto;
+  width: 70%;
+}
+
+.Banner h2 {
+  font-family: serif;
+  font-size: 45px;
+  font-weight: lighter;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+.Banner p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 150%;
+}
+
+.banner-left {
+  width: 50%;
+}
+
+.banner-right {
+  margin-top: 5%;
+  height: 100%;
+  width: 50%;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1170px) {
+  .Banner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .Banner {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .Banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner-right {
+    height: 350px;
+    width: 100%;
+  } 
+
+  .banner-left {
+    margin: auto; 
+    width: 100%;
+  }
+
+  .Banner h2 {
+    text-align: center;
+  }
+
+  .button-holder {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Banner {
+    width: 90%;
+  }
+
+  .banner-right {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .banner-right {
+    height: 180px;
+  }
+}
+
