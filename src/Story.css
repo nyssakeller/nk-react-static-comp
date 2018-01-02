@@ -1,7 +1,6 @@
 .Story {
   display: flex;
-  min-width: 49%;
-  max-width: 49%;
+  width: 49%;
   height: 250px;
   border: 2px solid ghostwhite;
   margin-top: 20px;
@@ -9,6 +8,10 @@
 
 .Story img {
   width: 175px;
+}
+
+.storyImage {
+  height: 100%;
 }
 
 .story-info {
@@ -28,4 +31,26 @@
   font-weight: lighter;
   line-height: 150%;
   margin: 0;
+}
+
+@media screen and (max-width: 910px) {
+  .Story {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Story {
+    flex-direction: column;
+    height: 650px;
+  }
+
+  .storyImage {
+    height: 380px;
+    width: 100%!important;
+  }
+
+  .authorInfo {
+    margin-top: 10%;
+  }
 }

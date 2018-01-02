@@ -6,8 +6,8 @@ const Banner = () => {
   return (
     <div className='Banner'>
       <div className='banner-left'>
-        <h2>Interesting ideas that set your mind in motion</h2>
-        <p>Hear directly from the people who know it best. From tech to politics to creativity and more — whatever your interest, we’ve got you covered.</p>
+        <h2>Dunder Mifflin</h2>
+        <p>Get a closer look at a typical day at Dunder Mifflin and get advice from the best on how to survive another day at the office.</p>
         <div className='button-holder'>
           <Button buttonType='dark'
                   buttonText='Get started' />
@@ -15,7 +15,7 @@ const Banner = () => {
                   buttonText='Learn more' />
         </div>
       </div>
-      <div className='banner-right'></div>
+      <img className='banner-right' src='http://az616578.vo.msecnd.net/files/2016/06/24/636023438418833640-1945838923_1442955860897.jpeg' />
     </div>
   )
 }

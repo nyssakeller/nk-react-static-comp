@@ -7,35 +7,35 @@ import './App.css';
 
 const stories = [
   {
-    img: './story1.jpg',
-    title: 'Winning at Fonts',
-    desc: 'or, Why you should care about typography',
-    authImg: './louisa.png',
-    authName: 'Louisa',
+    img: './public/Somhow-I-Mangage.jpg',
+    title: 'Somehow I Manage',
+    desc: 'Sometimes I sing in the shower, sometimes I spend too much time volunteering, occasionally I\'ll hit someone with my car.',
+    authImg: './public/michael.jpg',
+    authName: 'Michael Scott',
     estTime: '2 min'
   },
   {
-    img: './story2.jpg',
-    title: 'Hoodlums: a dissertation',
-    desc: 'Examining villains in modern storytelling',
-    authImg: './alternate.png',
-    authName: 'Nathaniel',
+    img: './public/dwight.jpg',
+    title: 'Are you okay?',
+    desc: 'I am better than you have ever been or ever will be.',
+    authImg: './public/dwight2.jpg',
+    authName: 'Dwight Schrute',
     estTime: '10 min'
   },
   {
-    img: './story3.jpg',
-    title: 'Halloween is a year-round sport',
-    desc: 'Those who say otherwise just aren\'t trying hard enough.',
-    authImg: './leta.png',
-    authName: 'Leta',
+    img: './public/kevin-story.png',
+    title: 'Never Settle for Less',
+    desc: 'Mini-cupcakes? As in the mini version of regular cupcakes? Which is a mini version of cake? Where does it end with you people?',
+    authImg: './public/kevin.jpg',
+    authName: 'Kevin Malone',
     estTime: '8 min'
   },
   {
-    img: './story4.jpg',
-    title: 'How to Improve Learning and Classroom Engagement with Humor',
-    desc: 'Okay, so first of all, everybody knows fart jokes are hilarious ...',
-    authImg: './pamela.png',
-    authName: 'Pamela',
+    img: './public/jim-story.jpg',
+    title: 'Become Dwight',
+    desc: 'Fact, bears eat beats. Bears, beats, Battlestar Galatica.',
+    authImg: './public/jim.jpg',
+    authName: 'Jim Halpert',
     estTime: '11 min'
   }
 ]
@@ -43,12 +43,11 @@ const stories = [
 const App = () => {
   return (
     <div className='App'>
-      {/* add a Header component (already created) */}
-      {/* add a Banner component (already created) */}
-      <Stories  storiesTitle="Today's Top Stories"
-                stories={stories} />
-      {/* add another Stories component with storiesTitle 'Pop Culture', and just pass down the same stories array as the above Stories component (already created but will need some editing) */}
-      {/* add a Footer Component (you will need to create this component in the provided Footer.js file) */}
+      <Header />
+      <Banner />
+      <Stories  storiesTitle="Today's Top Stories" stories={stories} />
+      <Stories storiesTitle="Pop Culture" stories={stories} />
+      <Footer />
     </div>
   );
 }
